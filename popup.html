@@ -1,0 +1,99 @@
+<head>
+	<style>
+	body {
+		overflow-x: hidden;
+		background-color: white;
+	}
+	.songTitle{
+		color: #01244b;
+		text-decoration: none;
+		font-size: 13px;
+		font-weight: bold;
+		font-family: arial, 'Helvetica Neue';
+	}
+	.byText {
+		color: #6d6d6d;
+		font-size: 13px;
+		font-family: arial, 'Helvetica Neue';
+		font-style: normal;
+	}
+	.artistSummary {
+		color: #01244b;
+		text-decoration: none;
+		font-size: 13px;
+		font-family: arial, 'Helvetica Neue';
+	}
+
+	.DownloadLink {
+		display: block;
+		width: 200px;
+		height: 20px;
+		background: #0b6796;
+		background:-webkit-gradient(linear, left top, left bottom, from(#0f87c5), to(#0b6796));background:-moz-linear-gradient(top, #0f87c5, #0b6796);
+		text-align: center;
+		border-radius: 0px;
+		color: white;
+		border-left-color: rgba(0, 0, 0, 0.0980392);
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-color: rgba(0, 0, 0, 0.0980392);
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-color: rgba(0, 0, 0, 0.0980392);
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-top-style: solid;
+		border-top-width: 1px;
+		font-family: Arial, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		margin-top: 5px;
+		padding-top: 5px;
+		box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
+		text-decoration: none;
+	}
+	a.DownloadLink:hover{
+		background-color:#0b6796;
+		text-shadow:0 -1px 0 rgba(0,0,0,0.25);
+		color: #fff;
+		text-decoration: none;
+		background-position: 0 -15px;
+		-webkit-transition: background-position 0.1s linear;
+		-moz-transition: background-position 0.1s linear;
+		-o-transition: background-position 0.1s linear;
+		transition: background-position 0.1s linear;
+		background-repeat: repeat-x;	
+	}
+
+	a.DownloadLink:active{
+		-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+		-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+		box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+	}
+
+	.album_art {
+		height: 200px;
+		width: 200px;
+		padding-bottom: 5px;
+		display: inline;
+	}
+
+
+
+	</style>
+
+</head>
+<body tabindex="1">
+	<div>
+      <img src="" itemprop="image" class="album_art" id="album_art">
+    </div>
+	<div><span  class="songTitle"></span></div>
+	<div><span class="byText">by</span> <span  class="artistSummary"></span></div>
+	<div><a href="#" download='ERROR' id="DownloadLink" class="DownloadLink"></a></div>
+	<script src="popup.js"></script>
+</body>
+</html>
